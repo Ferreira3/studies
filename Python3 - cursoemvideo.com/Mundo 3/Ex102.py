@@ -6,7 +6,7 @@
 
 def fatorial(num, show=False):
     """
-    >Calcula o fatorial de um número.
+    ->Calcula o fatorial de um número.
     :param num: Número que será calculado.
     :param show: (opcional) Decidir se o cáculo será ou não mostrado.
     :return: O valor fatorial de num.

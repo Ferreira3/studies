@@ -7,11 +7,11 @@
 def ficha(nome=None, gols=0):
     if not nome:
         nome = "<desconhecido>"
-    if not gols or gols is not int:
+    if not gols or gols.isnumeric() == False:
         gols = 0
     return f"O jogador {nome} marcou {gols} gol(s)!"
 
 
 nome = str(input("Nome do jogador: ")).strip().title()
-gol = (input("Número de gols: "))
+gol = input("Número de gols: ")
 print(ficha(nome, gol))
