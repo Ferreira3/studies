@@ -4,4 +4,6 @@
 
 from exer110 import moeda
 
-...
+vlr = float(input("Digite um valor para ser analisado: R$"))
+
+moeda.resumo(vlr, 10, 10)
