@@ -16,13 +16,9 @@ while True:
     if resp == 1:
         cabecalho("LISTA DE PESSOAS")
         with open('arquivo.txt', 'r') as arquivo:
-            conteudo = arquivo.read()
-            print(conteudo)
+            print(arquivo.read())
     elif resp == 2:
-        cabecalho("CADASTRAR NOVA PESSOA")
-        with open('arquivo.txt', 'a') as arquivo:
-            novapessoa = "\n"+str(input("Digite o nome e idade: "))
-            arquivo.write(novapessoa)
+        cabecalho("Opção 2")
     elif resp == 3:
         cabecalho("Saindo do sistema... Até logo!")
         break
